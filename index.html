@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Weather</title>
+</head>
+<body>
+    <main class="container">
+        <section class="search-box">
+            <i class='bx bx-map' aria-hidden="true"></i>
+            <input type="text" placeholder="Enter your location" aria-label="Location input">
+            <button class="bx bx-search-alt-2" aria-label="Search button"></button>
+        </section>
+
+        <section class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather"></div>
+                    <img src="images/cloud.png" alt="cloud icon">
+                    <p class="temperature">0<span>℃</span></p>
+                    <p class="description">Broken Clouds</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water' aria-hidden="true"></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>    
+            </div>
+
+            <div class="wind">
+                <i class='bx bx-wind' aria-hidden="true"></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0 Km/h</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
