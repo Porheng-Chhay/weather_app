@@ -6,10 +6,11 @@ const weatherDetails = document.querySelector('.weather-details');
 search.addEventListener('click', () => {
     const APIKey = 'd5756ddc827790602a6e2089eb02fee4';
     const city = document.querySelector('.search-box input').value;
+    const base_url = "https://api.openweathermap.org/data/2.5/weather";
 
     if (city === '') return;
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
+    fetch(`${base_url}?q=${city}&units=metric&appid=${APIKey}`)
         .then(response => response.json())
         .then(json => {
             const image = document.querySelector('.weather-box img');
